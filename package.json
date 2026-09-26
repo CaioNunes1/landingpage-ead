@@ -1,0 +1,25 @@
+{
+  "name": "minicurso-ead-ia",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test:e2e": "node tests/e2e.mjs"
+  },
+  "dependencies": {
+    "jspdf": "^3.0.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "playwright-core": "^1.63.0",
+    "typescript": "~5.9.2",
+    "vite": "^7.1.2"
+  }
+}
