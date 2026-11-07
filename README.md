@@ -23,6 +23,12 @@ Edite **`src/data/course.ts`**:
 - `references`: substitua os títulos e autores marcados como placeholders pelas fontes utilizadas. Adicione o campo `url` quando houver link.
 - `course`, `profiles`, `objectives` e `quizQuestions`: dados adicionais do minicurso.
 
+## Materiais complementares da 2ª VA
+
+A seção “Materiais complementares”, após a videoaula, reúne o e-book interativo no FlipHTML5 e o infográfico. O menu “Materiais” leva diretamente a essa seção. O percurso sugerido é: videoaula → e-book → infográfico → exemplos → avaliação.
+
+Os links, títulos e a transcrição textual do infográfico ficam em `learningMaterials`, no arquivo `src/data/course.ts`. As cópias em PDF estão em `public/materiais/` e acompanham o build e a publicação na Vercel. O e-book pode ser lido online ou baixado; o infográfico pode ser aberto em nova aba ou baixado. Para atualizar os PDFs, substitua os arquivos mantendo os nomes, ou ajuste os caminhos em `learningMaterials`.
+
 ## Comprovante
 
 Depois de confirmar a participação na aula e na avaliação, o visitante informa seu nome e pode gerar `comprovante-nome-do-participante.pdf`. O nome do arquivo é sanitizado. O PDF é montado com **jsPDF no navegador**; os dados não são enviados a servidor. O documento é um **comprovante de participação**, sem caráter de certificado institucional.

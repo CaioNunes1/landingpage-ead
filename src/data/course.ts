@@ -3,6 +3,32 @@ export const AUTHOR_NAME = 'Caio Gabriel Nunes de Lima';
 export const YOUTUBE_VIDEO_URL = 'https://youtu.be/8wQLCoFdsEo';
 export const EVALUATION_URL = 'COLOCAR_LINK_DO_GENIALLY_OU_FORMULARIO_AQUI';
 
+// Os PDFs ficam em public/materiais e são publicados junto com o site.
+export const learningMaterials = {
+  ebook: {
+    title: 'Personalização de exercícios com apoio de IA',
+    onlineUrl: 'https://online.fliphtml5.com/enchz/enfn/',
+    pdfUrl: '/materiais/ebook-personalizacao-de-exercicios-com-ia.pdf',
+    fileName: 'ebook-personalizacao-de-exercicios-com-ia.pdf',
+    format: '21 páginas · PDF · 137 KB',
+  },
+  infographic: {
+    title: 'Da necessidade ao exercício validado',
+    pdfUrl: '/materiais/infografico-personalizacao-com-ia.pdf',
+    fileName: 'infografico-personalizacao-com-ia.pdf',
+    format: '1 página · PDF · 80 KB',
+    steps: [
+      { title: 'Conhecer o estudante', description: 'Pré-requisitos, dificuldades e experiência.' },
+      { title: 'Definir o objetivo', description: 'A habilidade que o exercício deve desenvolver.' },
+      { title: 'Contextualizar o prompt', description: 'Perfil + conteúdo + formato + nível + critérios.' },
+      { title: 'Gerar e adaptar', description: 'Pedir versões básica, intermediária e avançada.' },
+      { title: 'Revisar o enunciado', description: 'Entradas, saídas, regras e linguagem claras.' },
+      { title: 'Testar o gabarito', description: 'Executar código e avaliar casos-limite.' },
+      { title: 'Aplicar e refinar', description: 'Observar resultados e ajustar a atividade.' },
+    ],
+  },
+};
+
 export const course = {
   title: 'Personalização de exercícios com apoio de IA',
   fullTitle: 'Personalização de exercícios com apoio de Inteligência Artificial',

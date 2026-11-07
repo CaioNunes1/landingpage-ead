@@ -5,6 +5,7 @@ import { Quiz } from './components/Quiz';
 import { CertificateForm } from './components/CertificateForm';
 import { Hero, About, Objectives, Lesson, Examples, PromptAndReview, ProcessAndPlanning } from './sections/LearningSections';
 import { course, references } from './data/course';
+import { LearningMaterials } from './sections/LearningMaterials';
 
 function Evaluation({ onComplete }: { onComplete: () => void }) {
   const [showEmbed, setShowEmbed] = useState(false);
@@ -26,5 +27,5 @@ function Footer() {
 
 export default function App() {
   const [quizComplete, setQuizComplete] = useState(false);
-  return <><a className="skip-link" href="#conteudo">Pular para o conteúdo</a><Header /><main id="conteudo"><Hero /><About /><Objectives /><Lesson /><Examples /><PromptAndReview /><ProcessAndPlanning /><Evaluation onComplete={() => setQuizComplete(true)} /><References /><Conclusion quizComplete={quizComplete} /></main><Footer /></>;
+  return <><a className="skip-link" href="#conteudo">Pular para o conteúdo</a><Header /><main id="conteudo"><Hero /><About /><Objectives /><Lesson /><LearningMaterials /><Examples /><PromptAndReview /><ProcessAndPlanning /><Evaluation onComplete={() => setQuizComplete(true)} /><References /><Conclusion quizComplete={quizComplete} /></main><Footer /></>;
 }

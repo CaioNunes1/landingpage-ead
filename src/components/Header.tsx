@@ -3,7 +3,7 @@ import { course } from '../data/course';
 
 const links = [
   ['inicio', 'Início'], ['sobre', 'Sobre'], ['objetivos', 'Objetivos'],
-  ['aula', 'Aula'], ['exemplos', 'Exemplos'], ['avaliacao', 'Avaliação'],
+  ['aula', 'Aula'], ['materiais', 'Materiais'], ['exemplos', 'Exemplos'], ['avaliacao', 'Avaliação'],
   ['referencias', 'Referências'], ['conclusao', 'Conclusão'],
 ];
 
